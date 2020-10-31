@@ -7,14 +7,13 @@
 
     <title>Bootstrap Basic Portfolio</title>
 
-    <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <!-- your own CSS stylesheet -->
+    
     <link rel="stylesheet" href="./Assets/css/Homework-2MyOwnStylesheet.css">
   </head>
 
   <body class="portfolio">
-    <!--   navbar -->
+   
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand" href="#"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,14 +25,17 @@
           
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
+              Profile
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html">Home/About</a>
-              <a class="dropdown-item" href="contact.html">Contact</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="https://www.linkedin.com/in/pierre-calmels/">linkedIn</a>
+              <a class="dropdown-item" href="index.html">Profile</a>
+
               <a class="dropdown-item" href="./Assets/resume/PIERRE_CALMELS_resume.pdf">Resume</a>
+                  
+              <a class="dropdown-item" href="https://www.linkedin.com/in/pierre-calmels/"><span class="fab fa-linkedin">linkedIn</span></a>
+              
+              <a class="dropdown-item" href="https://github.com/pierre8237"><span class="fab fa-github-square">Github</span></a>
+              
             </div>
           </li>
           <li class="nav-item">
@@ -43,25 +45,17 @@
       </div>
     </nav>
     <!-- Start of container -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1">
-          <input type="button" class="btn btn-info" value="Portfolio" onclick=" relocate_portfolio()">
-        </div>  
-        <div class="col-md-1">
-          <input type="button" class="btn btn-info" value="Contact" onclick=" relocate_contact()">
-        </div>  
+    <div class="jumbotron jumbotron-fluid">
+      <div class=".container-fluid">
+        <h1 class="display-4"> </h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
       </div>
     </div>
     <!-- End of container -->
     <div class="container">
       <div class="row">
         <div class="col-fluid">
-          <img id="leChateau" src="./Assets/images/Le Chateau.jpeg" alt="Le Chateau Restaurant" class="img-fluid">
-          <img id="indianaJones" src="./Assets/images/indiana-jones-george-lucas-steven-spielberg-annie-leibovitz-vf.jpg" alt="Behind the Scenes" class="img-fluid">
-          <img id="cobbsMillInn" src="./Assets/images/CobbsMillInn.jpg" class="img-fluid" alt="Cobb's Mill Inn">          
-          <img id="OneOhOne" src="./Assets/images/101-park-1.jpg" alt="101 park" class="img-fluid">
-          <img id="rogerSermanInn" src="./Assets/images/roger_sherman_inn.jpg" alt="Roger Sherman Inn" class="img-fluid">
+          
           <img id="harrysNewYorkBarParis" src="Assets/images/Harry'sNewYorkBar.jpg" alt="Harry's New York Bar" class="img-fluid">  
         </div>
       </div>  
@@ -80,7 +74,16 @@
         </div>    
       </div>  
     </footer>
-
+<div class="container">
+  <div class="row">
+    <div class="col-md-1">
+      <input type="button" class="btn btn-info" value="Portfolio" onclick=" relocate_portfolio()">
+    </div>
+    <div class="col-md-">
+      <input type="button" class="btn btn-info" value="Contact" onclick=" relocate_contact()">
+    </div>
+  </div>
+</div>
     <!-- End of footer -->
     <script>
       function relocate_portfolio()

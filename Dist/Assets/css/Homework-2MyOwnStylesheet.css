@@ -13,3 +13,12 @@
 .navbar {
   background-color: darkturquoise;
 }
+.jumbotron {
+  height: 150px;
+  width: 100%;
+  background-image: url("../ProfilePhotos/Screenshot (498).png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}

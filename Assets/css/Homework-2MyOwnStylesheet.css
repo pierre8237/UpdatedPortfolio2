@@ -1,0 +1,24 @@
+.index #bioName {
+  background-color: rgb(72, 153, 234);
+  color: yellowgreen;
+}
+
+.index .two-toned-footer-color {
+  background-color: rgb(72, 153, 234);
+}
+
+.btn {
+  background-color: darksalmon;
+}
+.navbar {
+  background-color: darkturquoise;
+}
+.jumbotron {
+  height: 150px;
+  width: 100%;
+  background-image: url("../ProfilePhotos/Screenshot (498).png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}

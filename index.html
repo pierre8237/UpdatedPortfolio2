@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>Bootstrap Basic Portfolio</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Boostrap Stylesheet/ CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- your own CSS stylesheet -->
+    <link rel="stylesheet" href="./Assets/css/Homework-2MyOwnStylesheet.css">
+  </head>
+
+  <body class="index">
+    <!-- NavBar-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent"  >
+          <ul class="navbar-nav mr-auto">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Links
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                   
+                <a class="dropdown-item" href="./workExperience.html">Work Experience</a>
+                <div class="dropdown-divider"></div>
+
+                
+                <a class="dropdown-item" href="https://www.linkedin.com/in/pierre-calmels/"><span class="fab fa-linkedin">linkedIn</span></a>
+                
+                <a class="dropdown-item" href="https://github.com/pierre8237"><span class="fab fa-github-square">Github</span></a>
+                <a class="dropdown-item" href="./Assets/resume/PierreCalmelsResume.pdf">Resume</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#"></a>
+            </li>
+          </ul>
+        </div>
+      </nav>   
+      
+      <div class="jumbotron jumbotron-fluid">
+        <div class= ".container-fluid">
+          <h1 class="display-4"> </h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+
+
+      <!-- Start of container -->
+       <div class="container">
+          <div class="row">
+
+              <input type="button" class="btn btn-info" value="Work Experience" onclick=" relocate_experience()"> 
+          </div>
+          <div class="row" style="display: block; margin-top: 50px">
+            <h1 style="text-align:center;" >Pierre Calmels</h1>
+            <h2 style="text-align:center;">Web Developer</h2>
+            <h2 style="text-align:center;">Full Stack</h2>
+          </div>
+        <div class="container" style="display: flex; flex-direction: column; column-count: 2; flex-wrap: wrap;  margin-top: 20px; height: 220px">
+
+          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px;">HTML5</h2>
+          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">Javascript</h2>
+          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">mongodb</h2>
+          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">Express</h2>
+          
+          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">CSS3</h2>
+          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">Jquery</h2>
+          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">mySQL</h2>
+          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">Node.js</h2>
+        </div> 
+      
+        <div class="card-group">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="card" style="max-width: 100%; height:100%;">
+                <img src="Assets/ProfilePhotos/WeatherDashboard.png" class="card-img-top"
+                alt="Weather Dashboard">
+                <h5 class="card-title" style="margin: 5px 0px 0px 15px;" >Weather-Tracker</h5>
+                <div class="card-body">
+                  <p class="card-text">This is an single-page weather app using Open-Weather API to get current weather the as well as the five-day forecast. 
+                  </p>
+                  <a href="https://github.com/pierre8237/Weather-Tracker" class="btn btn-primary">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card" style="max-width: 100%; height:100%;">
+                <img src="Assets/ProfilePhotos/logic.png" class="card-img-top"
+                alt="Code Quiz">
+                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Coding Quiz</h5>
+                <div class="card-body">
+                  <p class="card-text">A two page quiz app with countdown timer and high score-page. Displayed is my some of my favorite code from my bootcamp journey. On click, triggers set local storage, navigates to a scores page and gets entire local storage object, saves to an array, sorts the result in alphabetical and decsending numerical order.
+                  </p>
+                  <a href="https://github.com/pierre8237/homework-quiz" class="btn btn-primary">GitHub</a>
+                </div>
+              </div> 
+            </div>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="row no-gutters">   
+            <div class="col-md-6">
+              <div class="card" style="max-width: 100%; height:100%">
+                <img src="Assets/ProfilePhotos/TemplateEngineHtml.png" class="card-img-top"
+                alt="Employee Template">
+                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Employee_Summary</h5>
+                <div class="card-body">
+                  <p class="card-text">This is a simple CLI app that uses inquirer to collect user input and populate a template structured with javascript class objects
+                  </p>
+                  <a href="https://github.com/pierre8237/Employee_Summary" class="btn btn-primary">GitHub</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card" style="max-width: 100%; height:100%">
+                <img src="Assets/ProfilePhotos/Note Taker - Google Chrome 10_19_2020 11_21_58 AM.png" class="card-img-top"
+                  alt="Note Takin">
+                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Note Takin'</h5>
+                <div class="card-body">
+                  <p class="card-text">A CLI note taking app using node.js and express routes. 
+                  </p>
+                  <a href="https://github.com/pierre8237/note-takin/tree/main/docs" class="btn btn-primary">GitHub</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-12">
+          <div class="card" style="max-width: 100%; height:100%">
+            <img src="Assets/ProfilePhotos/Merritt Hunt Club - Google Chrome 10_21_2020 4_41_55 PM.png" class="card-img-top"
+              alt="Merrit Hunt Club">
+            <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Merrit Hunt Club</h5>
+            <div class="card-body">
+              <p class="card-text">
+                Group project, to create a static website. We developed a country-club website around a fictional club which
+                offers members various recreational and social activities. The site is designed to promote the club to
+                prosective members and encourage current members to make use of the club. There is a weather api widget and a
+              </p>
+              <a href="https://pierre8237.github.io/clubStaff/" class="btn btn-primary">Deployed Link</a>
+              <a href="https://github.com/pierre8237/clubStaff" class="btn btn-primary">github</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-md-12">
+          <div class="card" style="max-width: 100%; height:100%">
+            <img src="Assets/ProfilePhotos/Dine-in!.png" class="card-img-top" alt="Dine-In!">
+            <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Dine-In!</h5>
+            <div class="card-body">
+              <p class="card-text">This is a covid-19 inspired, group project. The app is intended to offer diners a real-time
+                status for seating at participating restaurants. Since the prospect of a busy dining room during a pandemic
+                might dash plans for a night out, seeing the current seating availabilty can show all the alternatives inorder
+                to make an informed, and safe decision. Likewise, restuarants can encourage diner's
+              </p>
+              <a href="https://dine-now.herokuapp.com/" class="btn btn-primary">Deployed Link</a>
+              <a href="https://github.com/pierre8237/Dine-now" class="btn btn-primary">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        function relocate_experience()
+        {
+          location.href = "workExperience.html";
+        } 
+     
+    </script>
+    <!-- jQuery CDN/ (Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

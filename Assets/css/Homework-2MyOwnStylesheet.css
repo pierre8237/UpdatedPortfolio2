@@ -14,11 +14,118 @@
   background-color: darkturquoise;
 }
 .jumbotron {
-  height: 150px;
+  height: 250px;
   width: 100%;
-  background-image: url("../ProfilePhotos/Screenshot (498).png");
+  margin-bottom: 0px;
+  background-image: url("../ProfilePhotos/portfolioHeadliner.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: repeat;
   background-size: cover;
+}
+.container {
+  display: "float";
+  background-color: darkorchid;
+  grid-template-columns: 120px 120px 60px;
+  padding: 10px;
+  grid-gap: 5px;
+  mask-border-width: 100%;
+}
+
+.container > div {
+  display: "float";
+  color: darkmagenta;
+  background-color: darkcyan;
+  justify-content: center;
+  border-bottom: 0px;
+  align-content: justify;
+  font-size: 30px;
+  font-family: monospace;
+  text-shadow: rgb(123, 0, 211);
+}
+
+.links {
+}
+#name {
+  font-size: 3.3rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+#developer {
+  text-rendering: auto;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+#fullStack {
+  font-size: 2.2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#html {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+#javascript {
+  font-size: 2.1rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#mongodb {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#express {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#cssThree {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#jquery {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#mySql {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#node {
+  font-size: 2rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#react {
+  font-size: 2.3rem;
+  text-rendering: auto;
+  text-shadow: 2px 2px rgb(117, 0, 128);
+}
+
+#weather {
+}
+#quiz {
+}
+
+#schedule {
+}
+#takin {
+}
+#clubStaff {
+}
+
+#wine {
 }

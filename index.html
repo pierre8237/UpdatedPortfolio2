@@ -11,168 +11,295 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <!-- your own CSS stylesheet -->
     <link rel="stylesheet" href="./Assets/css/Homework-2MyOwnStylesheet.css">
-  </head>
+    <style>
 
+    </style>
+  </head>
+<!--<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+  aria-haspopup="true" aria-expanded="false">Links</a>-->
   <body class="index">
     <!-- NavBar-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"></a>
+        <!-- <a class="navbar-brand" href="#"></a> -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse pull-right" id="navbarSupportedContent"  >
           <ul class="navbar-nav mr-auto">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Links
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                   
-                <a class="dropdown-item" href="./workExperience.html">Work Experience</a>
-                <div class="dropdown-divider"></div>
 
-                
+            <li>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
                 <a class="dropdown-item" href="https://www.linkedin.com/in/pierre-calmels/"><span class="fab fa-linkedin">linkedIn</span></a>
-                
                 <a class="dropdown-item" href="https://github.com/pierre8237"><span class="fab fa-github-square">Github</span></a>
                 <a class="dropdown-item" href="./Assets/resume/Pierre_Calmels_Resume.pdf">Resume</a>
+
               </div>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#"></a>
+
+              
+              <div class="links" display="inline">
+
+                <li id="weather" class="nav-item" display="inline"></li>
+                  <a class="nav-link justify-content-end" href="#">Weather Dashboard</a>
+                  
+                </li>
+
+                <li id="quiz" class="nav-item" display="inline" >
+                  <a class="nav-link justify-content-end" href="#">Code Quiz</a>
+                </li>
+
+                <li id="schedule" class="nav-item" display="inline">
+                  <a class="nav-link justify-content-end" href="#">Work Day Scheduler</a>
+                </li>
+                <li id="takin" class="nav-item" display="inline">
+                  <a class="nav-link justify-content-end" href="#">Note Takin</a>
+                </li>
+                <li id="clubStaff" class="nav-item" display="inline">
+                  <a class="nav-link justify-content-end" href="#">Merritt Hunt Club</a>
+                </li>
+                <li id="wine" class="nav-item" display="inline">
+                  <a class="nav-link justify-content-end" href="#">Dionysis!</a>
+                </li>
+
+    
+              </div>
             </li>
+
           </ul>
         </div>
       </nav>   
       
-      <div class="jumbotron jumbotron-fluid">
-        <div class= ".container-fluid">
-          <h1 class="display-4"> </h1>
-          <!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class= "container-fluid">
+            <h1 class="display-4"></h1>
+            <!--<p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>-->
+          </div>
         </div>
-      </div>
 
 
-      <!-- Start of container -->
-       <div class="container">
-          <div class="row">
+       
 
-              <input type="button" class="btn btn-info" value="Work Experience" onclick=" relocate_experience()"> 
+<!--           <div class="row no-gutters" style="display: block; width: 100%; height: 100%">
+              <input class="btn btn-info" type="button"  value="Work Experience" onclick=" relocate_experience()">
+          </div> -->
+
+        <div class="container no-gutter" style="width: 100%">
+
+          <div style="width: 100%; height: 100%">
+            <div>
+              <h1 id="name" style="text-align:center; width: 100%">Pierre Calmels</h1>
+              <h2 id="developer" style="text-align:center; width: 100%">Web Developer</h2>
+              <h2 id="fullStack" style="text-align:center; width:100%">Full Stack</div>
           </div>
-          <div class="row" style="display: block; margin-top: 50px">
-            <h1 style="text-align:center;" >Pierre Calmels</h1>
-            <h2 style="text-align:center;">Web Developer</h2>
-            <h2 style="text-align:center;">Full Stack</h2>
-          </div>
-        <div class="container" style="display: flex; flex-direction: column; column-count: 2; flex-wrap: wrap;  margin-top: 20px; height: 220px">
 
-          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px;">HTML5</h2>
-          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">Javascript</h2>
-          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">mongodb</h2>
-          <h2 class="card-text" style="text-align: right; margin-left: 30%; margin-right: 5px">Express</h2>
+          <div class="wapper" style="flex-direction: inline-block; columns: 2; width: 100%; height: 100%" >
+
+              <div class="box" id="" style="float: inline-block; text-align: end; max-width: 100%"> 
+                <h3 class="box" id="html" style="justify-content: space-evenly; text-align: right; max-width: 100%">HTML5 </h3>
+                <h3 class="box" id="javascript" style="justify-content: space-evenly; text-align: right; max-width: 100%">Javascript </h3>
+                <h3 class="box" id="mongodb" style="justify-content: space-evenly; text-align: right; max-width: 100%">mongodb </h3>
+                <h3 class="box" id="express" style="justify-content: space-evenly; text-align: right; max-width: 100%">Express.js </h3>
+              </div>
+            
+              <div class="box" id="" style="float: inline-block; text-align: end; max-width: 100%">
+                <h3 class="box" id="cssThree" style="justify-content: space-evenly; text-align: left; max-width: 100%"> CSS3</h3>
+                <h3 class="box" id="jquery" style="justify-content: space-evenly;  text-align: left; max-width: 100%"> Jquery</h3>
+                <h3 class="box" id="mySql" style="justify-content: space-evenly;  text-align: left; max-width: 100%"> mySQL</h3>
+                <h3 class="box" id="node" style="justify-content: space-evenly;  text-align: left; max-width: 100%"> Node.js</h3>
+              </div>
+
+          </div>
           
-          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">CSS3</h2>
-          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">Jquery</h2>
-          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">mySQL</h2>
-          <h2 class="card-text" style="text-align: left; margin-right: 30%; margin-left: 5px">Node.js</h2>
-        </div> 
-      
-        <div class="card-group">
-          <div class="row no-gutters">
-            <div class="col-md-6">
-              <div class="card" style="max-width: 100%; height:100%;">
-                <img src="Assets/ProfilePhotos/WeatherDashboard.png" class="card-img-top"
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+            <div class="no-gutters">
+              <h3 class="no-gutters" id="react" style="text-align:center; width: 100%; height: 100%">React.js</h3>
+            </div>
+          </div>
+         
+       </div>
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class=".container-fluid">
+            <h1 class="display-4"></h1>
+          </div>
+        </div>
+
+
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+
+            <div class="col-sm-6" style="width: 100%; height: 100%">
+
+              <div class="card" style="width: 100%; height: 100%">
+                <img class="card-img-top" style="width: 100%; height: 100%" src="Assets/ProfilePhotos/WeatherDashboard.png" 
                 alt="Weather Dashboard">
-                <h5 class="card-title" style="margin: 5px 0px 0px 15px;" >Weather-Tracker</h5>
-                <div class="card-body">
-                  <p class="card-text">This is an single-page weather app using Open-Weather API to get current weather the as well as the five-day forecast. 
-                  </p>
-                  <a href="https://pierre8237.github.io/Weather-Tracker/" class="btn btn-primary">Deployed Link</a>
-                  <a href="https://github.com/pierre8237/Weather-Tracker" class="btn btn-primary">Code</a>
+                <h5 class="card-title" style="width: 100%; height: 100%; margin: 5px 0px 0px 5px" >Weather-Tracker</h5>
+                <div class="card-body" style="width: 100%; height: 100%">
+                  <p class="card-text" style="width: 100%; height: 100%">This is an single-page weather app using Open-Weather API to get current weather the as well as the five-day forecast.</p>
+                  <a class="btn btn-primary" href="https://pierre8237.github.io/Weather-Tracker/">Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/Weather-Tracker">Github</a>
                 </div>
               </div>
-            </div>
-            <div class="col-md-6">
-              <div class="card" style="max-width: 100%; height:100%;">
-                <img src="Assets/ProfilePhotos/logic.png" class="card-img-top"
+
+            </div>  
+
+          </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
+          </div>
+        </div>
+
+          
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+
+            <div class="col-sm-6" style="width: 100%; height: 100%">
+
+              <div class="card" style="width: 100%; height: 100%">
+                <img class="card-img-top" style="width: 100%; height: 100%" src="Assets/ProfilePhotos/logic.png" class="card-img-top" style="width: 100%; height: 100%"
                 alt="Code Quiz">
-                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Coding Quiz</h5>
-                <div class="card-body">
-                  <p class="card-text">A two page quiz app with countdown timer and high score-page. Displayed is my some of my favorite code from my bootcamp journey. On click, triggers set local storage, navigates to a scores page and gets entire local storage object, saves to an array, sorts the result in alphabetical and decsending numerical order.
+                <h5 class="card-title" style="width: 100%; height: 100%; margin: 5px 0px 0px 5px">Coding Quiz</h5>                
+                <div class="card-body" style="width: 100%; height: 100%">
+                  <p class="card-text" style="width: 100%; height: 100%">A two page quiz app with countdown timer and high score-page. Displayed is my some of my favorite code from my bootcamp journey. On click, triggers set local storage, navigates to a scores page and gets entire local storage object, saves to an array, sorts the result in alphabetical and decsending numerical order.
                   </p>
-                  <a href="https://pierre8237.github.io/homework-quiz" class="btn btn-primary">Deployed Link</a>
-                  <a href="https://github.com/pierre8237/homework-quiz" class="btn btn-primary">Code</a>
-                </div>
-              </div> 
-            </div>
-          </div>
-        </div>
-        <div class="card-group">
-          <div class="row no-gutters">   
-            <div class="col-md-6">
-              <div class="card" style="max-width: 100%; height:100%">
-                <img src="Assets/ProfilePhotos/TemplateEngineHtml.png" class="card-img-top"
-                alt="Employee Template">
-                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Employee_Summary</h5>
-                <div class="card-body">
-                  <p class="card-text">This is a simple CLI app that uses inquirer to collect user input and populate a template structured with javascript class objects
-                  </p>
-                  <a href="https://github.com/pierre8237/Employee_Summary" class="btn btn-primary">Code</a>
+                  <a class="btn btn-primary" href="https://pierre8237.github.io/homework-quiz">Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/homework-quiz">Github</a>
                 </div>
               </div>
+
             </div>
-            <div class="col-md-6">
-              <div class="card" style="max-width: 100%; height:100%">
-                <img src="Assets/ProfilePhotos/Note Taker - Google Chrome 10_19_2020 11_21_58 AM.png" class="card-img-top"
+
+          </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
+          </div>
+        </div>
+
+
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+            
+            <div class="col-md-6" style="width: 100%; height: 100%">
+              
+              <div class="card" style="width: 100%; height: 100%">
+                <img class="card-img-top" style="width: 100%; height: 100%" src="./Assets/ProfilePhotos/scheduler.png" 
+                alt="Work Day Scheduler">
+                <h5 class="card-title" style="width: 100%; height: 100%; margin: 5px 0px 0px 5px">Work Day Scheduler</h5>
+                <div class="card-body" style="width: 100%; height: 100%">
+                  <p class="card-text" style="width: 100%; height: 100%">This is a single page scheduling app that saves appointments for the current day by writing text input to local storage. Time is sychronized using moment.js and css changes are initiated by each advancing hour which initiates class changes written in jquery. I was happy with my code when I wrote it. I strove for simplicity and at 32 lines or so, it works.
+                  </p>
+                  <a class="btn btn-primary" href="https://pierre8237.github.io/scheduler/">Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/scheduler">Github</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
+          </div>
+        </div>
+
+
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+
+            <div class="col-md-6" style="width: 100%; height: 100%">
+
+              <div class="card" style="width: 100%; height: 100%">
+                <img class="card-img-top" style="width: 100%; height: 100%" src="Assets/ProfilePhotos/Note Taker - Google Chrome 10_19_2020 11_21_58 AM.png" 
                   alt="Note Takin">
-                <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Note Takin'</h5>
-                <div class="card-body">
-                  <p class="card-text">A CLI note taking app using node.js and express routes. 
+                <h5 class="card-title" style="width: 100%; height: 100%; margin:5px 0px 0px 5px">Note Takin'</h5>
+                <div class="card-body" style="width: 100%; height: 100%">
+                  <p class="card-text" style="width: 100%; height: 100%">A CLI note taking app using node.js and express routes. 
                   </p>
-                  <a href="https://note-takin.herokuapp.com/" class="btn btn-primary">Deployed Link</a>
-                  <a href="https://github.com/pierre8237/note-takin" class="btn btn-primary">Code</a>
+                  <a class="btn btn-primary" href="https://note-takin.herokuapp.com/">Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/note-takin">Github</a>
                 </div>
               </div>
+
             </div>
+
+          </div>
+        
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
           </div>
         </div>
-      </div>
-      <div class="row no-gutters">
-        <div class="col-md-12">
-          <div class="card" style="max-width: 100%; height:100%">
-            <img src="Assets/ProfilePhotos/Merritt Hunt Club - Google Chrome 10_21_2020 4_41_55 PM.png" class="card-img-top"
-              alt="Merrit Hunt Club">
-            <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Merritt Hunt Club</h5>
-            <div class="card-body">
-              <p class="card-text">
-                Group project, to create a static website. We developed a country-club website around a fictional club which
-                offers members various recreational and social activities. The site is designed to promote the club to
-                prosective members and encourage current members to make use of the club. There is a weather api widget and a
-              </p>
-              <a href="https://pierre8237.github.io/clubStaff/" class="btn btn-primary">Deployed Link</a>
-              <a href="https://github.com/pierre8237/clubStaff" class="btn btn-primary">Code</a>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
-      <div class="row no-gutters">
-        <div class="col-md-12">
-          <div class="card" style="max-width: 100%; height:100%">
-            <img src="./Assets/images/dionysus.png" class="card-img-top" alt="Dine-In!">
-            <h5 class="card-title" style="margin: 5px 0px 0px 15px;">Dine-In!</h5>
-            <div class="card-body">
-              <p class="card-text">This is a covid-19 inspired, group project. The app is intended to offer diners a real-time
-                status for seating at participating restaurants. Since the prospect of a busy dining room during a pandemic
-                might dash plans for a night out, seeing the current seating availabilty can show all the alternatives inorder
-                to make an informed, and safe decision. Likewise, restuarants can encourage diner's
-              </p>
-              <a href="https://dionysus2.herokuapp.com" class="btn btn-primary">Deployed Link</a>
-              <a href="https://github.com/pierre8237/4CODERZ" class="btn btn-primary">Code</a>
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+
+            <div class="col-md-6" style="width: 100%; height: 100%">
+
+              <div class="card" style="width: 100%; height: 100%"> 
+                <img class="card-img-top" style="width: 100%; height: 100%" src="Assets/ProfilePhotos/Merritt Hunt Club - Google Chrome 10_21_2020 4_41_55 PM.png" 
+                alt="Club Staff">              
+                <h5 class="card-title" style="width: 100%; height: 100%; margin: 5px 0px 0px 5px">Club Staff</h5>               
+                <div class="card-body" style="width: 100%; height: 100%">                
+                  <p class="card-text" style="width: 100%; height: 100%">
+                    My first group project created a static website for a fictional country-club called the Merritt Hunt Club. The club 
+                    offers members various recreational and social activities which can be scheduled from the site. It is designed to promote the club to
+                    prosective members and encourage current members to make use of the club. There is a weather api widget but the event scheduling function is handled by calendy. There is no database. A refactor would include building a backend and including proper authentication.
+                  </p>
+                  <a class="btn btn-primary" href="https://pierre8237.github.io/clubStaff/">Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/clubStaff">Github</a>
+                </div>
+              </div>
+
             </div>
+
+          </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
           </div>
         </div>
-      </div>
+
+        
+          <div class="row no-gutters" style="width: 100%; height: 100%">
+            
+            <div class="col-md-6" style="width: 100%; height: 100%">
+              
+              <div class="card" style="width: 100%; height: 100%">                
+                <img class="card-img-top" style="width: 100%; height: 100%" src="./Assets/images/dionysus.png" 
+                alt="Dionysus!">              
+                <h5 class="card-title" style="width: 100%; height: 100%; margin: 5px ">Dionysus</h5>
+                <div class="card-body" style="width: 100%; height: 100%">                
+                  <p class="card-text" style="width: 100%; height: 100%">Dionysus is a full stack wine lifestyle app which was orginally a project of the 4CODERZ team who reorganized as The 3 N.E.R.Ds (Node, express, react, database).
+                    This project was the culmination of our UCONN bootcamp experience and was completed using Agile methodology. It has a weather forcast api allowing for search by zip code and a database read function which displays information about select wines with a color picture of the bottle displated.   
+                  </p>
+                  <a class="btn btn-primary" href="https://dionysus2.herokuapp.com" >Demo</a>
+                  <a class="btn btn-primary" href="https://github.com/pierre8237/4CODERZ" >Github</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+        <div class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <h1 class="display-4"></h1>
+          </div>
+        </div>
+
+
       <script>
         function relocate_experience()
         {
